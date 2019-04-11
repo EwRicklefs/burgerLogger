@@ -8,6 +8,7 @@ if(process.env.JAWSDB_URL) {
     host: "zj2x67aktl2o6q2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
     port: 3306,
     user: "h0ctvizt3c84bakt",
+    socketPath: 'mysql-socket-path',
     password: "a5th09dhdbmx1ysd",
     database: "strxe1bxktmilpms"
   })

@@ -6,16 +6,16 @@ var burger = {
             cb(res)
         })
     },
-    insert: function(cb) {
+    insert: function(insertVal, cb) {
         orm.insertOne(insertVal, res => {
             cb(res)
         })
     },
-    update: function(cb) {
+    update: function(updateVal, cb) {
         orm.updateOne(updateVal, res => {
             cb(res)
         })  
     }
 }
 
-module.export = burger;
+module.exports = burger;

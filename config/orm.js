@@ -26,10 +26,10 @@ var orm = {
             cb(result)
         })
     },
-
-    updateOne: function(updateValId, cb) {
         //update one value here, flip devoured flag
-        var queryString = "update burger set devoured = true where id = ";
+    updateOne: function(updateValId, cb) {
+
+        var queryString = "update burgers set devoured = true where id = ";
         queryString += updateValId;
         queryString += ";"
         connection.query(queryString, (err, result) => {

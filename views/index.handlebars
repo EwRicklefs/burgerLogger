@@ -3,12 +3,25 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block}}
+  {{#unless devoured}}
+    <li>
+        {{burger_name}}
+        <button class="change-dev" data-id="{{id}}" data-devoured="{{devoured}}">
+            {{#if devoured}}{{else}}Devouer{{/if}}
+        </button>
+    </li>
     {{/unless}}
   {{/each}}
 </ul>
 
+<h2>Devoured Burgers</h2>
+{{#each burgers}}
+    {{#if devoured}}
+        <li>
+            {{burger_name}}
+        </li>
+    {{/if}}
+{{/each}}
 
 <h2>Add a Burger</h2>
 <form class="create-form">

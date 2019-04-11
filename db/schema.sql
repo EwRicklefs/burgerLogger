@@ -5,5 +5,5 @@ use burgers_db;
 create table burgers (
     id int AUTO_INCREMENT primary key,
     burger_name varchar(30),
-    devoured boolean
+    devoured boolean default false
 )

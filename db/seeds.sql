@@ -1,0 +1,10 @@
+insert into burgers (burger_name) values ('luger burger');
+insert into burgers (burger_name) values ('le pigeon burger');
+insert into burgers (burger_name) values ('double animal style');
+insert into burgers (burger_name) values ('whiskey king burger');
+insert into burgers (burger_name) values ('the company burger');
+insert into burgers (burger_name) values ('the original burger');
+insert into burgers (burger_name) values ('The Lola Burger');
+insert into burgers (burger_name) values ('Raw Steak Tartare Burger');
+insert into burgers (burger_name) values ('Buckhorn Burger');
+insert into burgers (burger_name) values ('Kobe Burger');

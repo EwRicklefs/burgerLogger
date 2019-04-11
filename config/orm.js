@@ -16,9 +16,12 @@ var orm = {
     },
     //inserts one value
     insertOne: function(insertVal, cb) {
-        var queryString = "insert into burgers (burger_name) values ;";
+        var queryString = "insert into burgers (burger_name) values ";
+        queryString += "('"
         queryString += insertVal;
+        queryString += "')"
         queryString +=";"
+        console.log(queryString)
         connection.query(queryString, (err, result) => {
             if(err) {
                 throw err;           

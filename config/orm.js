@@ -21,7 +21,6 @@ var orm = {
         queryString += insertVal;
         queryString += "')"
         queryString +=";"
-        console.log(queryString)
         connection.query(queryString, (err, result) => {
             if(err) {
                 throw err;           
